@@ -1,8 +1,12 @@
 ﻿<!doctype html>
+<!doctype html>
 <html class="no-js" lang="zxx">
-<head></head>
-<body style="display: none">
-	<title id="page-title">Cadastro de Produto | Repeteco</title>
+<head>
+	<script src="js/vendor/jquery-3.2.1.min.js"></script>
+	<script src="js/includeHtml.js"></script>
+</head>
+<body>
+	<title id="page-title">Meus Produtos | Repeteco</title>
 
 	<div class="wrapper" id="wrapper">
 		
@@ -60,7 +64,7 @@
 								<div class="content-inner">
 									<div class="switcher-currency">
 										<strong class="label switcher-label">
-											<span>Meus Anúncios</span>
+											<span>Meus Produtos</span>
 										</strong>
 										<div class="switcher-options">
 											<div class="switcher-currency-trigger">
@@ -152,16 +156,16 @@
 	</div>
 	<!-- End Search Popup -->
 
-        <div class="ht__bradcaump__area bg-image-material-escolar">
+        <div class="ht__bradcaump__area bg-image--6">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="bradcaump__inner text-center">
-                        	<h2 class="bradcaump-title">Cadastro de Produto</h2>
+                        	<h2 class="bradcaump-title">Meus Produtos</h2>
                             <nav class="bradcaump-content">
                               <a class="breadcrumb_item" href="index.html">Home</a>
                               <span class="brd-separetor">/</span>
-                              <span class="breadcrumb_item active">Cadastro de Produto</span>
+                              <span class="breadcrumb_item active">Meus Produtos</span>
                             </nav>
                         </div>
                     </div>
@@ -175,58 +179,87 @@
         			<div class="col-lg-12 col-12">
         				<div class="contact-form-wrap">
                             <form id="contact-form" action="#" method="post">
-                                <div class="single-contact-form space-between">
-                                    <input type="text" name="nome" placeholder="Título*">
-                                </div>
-                                <div class="single-contact-form space-between">
-									<select class="form-select" name="tipo_produto">
-										<option>Tipo de produto</option>
-										<option>Material escolar</option>
-										<option>Uniforme escolar</option>
+                                <div class="single-contact-form search-form space-between">
+									<select class="form-select" name="filtro_opcao">
+										<option>Selecione uma opção</option>
+										<option>Status</option>
+										<option>Tipo</option>
+										<option>Título</option>
+										<option>Valor</option>
+										<option>Criado em</option>
+										<option>Expira em</option>
 									</select>
-									<select class="form-select" name="estado_conservacao">
-										<option>Estado de conservação</option>
-										<option>Novo</option>
-										<option>Usado</option>
-									</select>									
+									<input type="text" name="pesquisa" placeholder="Pesquisar">
+									<button>Gerar</button>
+									<button type="submit" onclick="window.location.href='cadastro-produto.html'">Adicionar</button>
                                 </div>
-                                <div class="single-contact-form space-between">
-									<textarea name="descricao" placeholder="Descrição"></textarea>
-								</div>
-                                <div class="single-contact-form space-between">
-									<select class="form-select" name="nome_escola">
-										<option>Nome da Escola</option>
-										<option>Alfa Objetivo</option>
-										<option>Colégio Municipal Maria Luiza de Melo</option>
-										<option>Dom Jaime</option>
-										<option>E.E.B Prof. Laércio Caldeira de Andrada</option>
-									</select>	
-								</div>								
-								<div class="single-contact-form space-between">
-									<input type="text" name="valor" placeholder="Valor*">			
-									<input type="text" name="tamanho" placeholder="Tamanho*">
-								</div>	
-								<div class="single-contact-form space-between">
-									<select class="form-select" name="status_anuncio">
-										<option>Status do anúncio</option>
-										<option>Aberto</option>
-										<option>Finalizado</option>
-										<option>Cancelado</option>
-									</select>
-									<input type="text" name="data_expiracao" placeholder="Anúncio expira em*">
-								</div>	
-								<div class="single-contact-form space-between">
-									<input type="file" name="anexo1">
-									<input type="file" name="anexo1">
-								</div>	
-
-                                <div class="contact-btn">
-									<button type="reset" class="btn-cancel">Cancelar</button>
-                                    <button type="submit" onclick="window.location.href='meus-produtos.html'">Salvar</button>
+                                <div class="single-contact-form">
                                 </div>
                             </form>
                         </div> 
-        			</div>
+					</div>
+					<div class="col-lg-12 col-12">
+						<table>
+							<thead>
+								<td>Tipo</td>
+								<td>Título</td>
+								<td>Valor</td>
+								<td>Criado em</td>
+								<td>Expira em</td>
+								<td>Ações</td>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Serviço</td>
+									<td>Aula de redação</td>
+									<td>50,00</td>
+									<td>04/01/2019</td>
+									<td>31/12/2019</td>
+									<td>
+										<a href=""><i class="icon-note icons"></i></a>
+										<a href=""><i class="icon-trash icons"></i></a>
+										<a href=""><i class="icon-check icons published"></i></a>
+									</td>
+								</tr>
+								<tr>
+									<td>Produto</td>
+									<td>Mochila Monsterhigh linda</td>
+									<td>25,00</td>
+									<td>10/05/2019</td>
+									<td>20/02/2020</td>
+									<td>
+										<a href=""><i class="icon-note icons"></i></a>
+										<a href=""><i class="icon-trash icons"></i></a>
+										<a href=""><i class="icon-check icons published"></i></a>
+									</td>
+								</tr>
+								<tr>
+									<td>Produto</td>
+									<td>Apostila Positivo 2019</td>
+									<td>30,00</td>
+									<td>18/04/2019</td>
+									<td>10/09/2019</td>
+									<td>
+										<a href=""><i class="icon-note icons"></i></a>
+										<a href=""><i class="icon-trash icons"></i></a>
+										<a href=""><i class="icon-close icons expired"></i></a>
+									</td>
+								</tr>
+								<tr>
+									<td>Produto</td>
+									<td>Apostila Positivo 2017</td>
+									<td>10,50</td>
+									<td>08/02/2019</td>
+									<td>10/08/2019</td>
+									<td>
+										<a href=""><i class="icon-note icons"></i></a>
+										<a href=""><i class="icon-trash icons"></i></a>
+										<a href=""><i class="icon-check icons published"></i></a>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>					
         		</div>
         	</div>
         </section>
@@ -234,8 +267,7 @@
 		<div w3-include-html="inc/footer.html"></div>
 	</div>
 
-	<!-- JS Files -->
-	<script src="js/vendor/jquery-3.2.1.min.js"></script>
+    <!-- JS Files -->
 	<script src="js/vendor/modernizr-3.5.0.min.js"></script>    
 	<script src="js/popper.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
