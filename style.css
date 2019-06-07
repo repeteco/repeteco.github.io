@@ -3971,6 +3971,7 @@ h3.widget-title-modal {
     font-style: italic;
     font-weight: 400;
     text-transform: capitalize;
+text-shadow: 1px 1px #4e9fba;
     color: #fff; }
     .bradcaump__inner .bradcaump-content .breadcrumb_item.active, .bradcaump__inner .bradcaump-content .breadcrumb_item:hover {
       color: #e59285; }

@@ -2,10 +2,10 @@
 <html class="no-js" lang="zxx">
 <head></head>
 <body style="display: none">
-	<title id="page-title">Relatório de Anúncios | Repeteco</title>
+	<title id="page-title">Gereciar Escolas | Repeteco</title>
 
 	<div class="wrapper" id="wrapper">
-
+		
 		<div w3-include-html="inc/menu.html"></div>
 
         <div class="ht__bradcaump__area bg-image--6">
@@ -13,11 +13,11 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="bradcaump__inner text-center">
-                        	<h2 class="bradcaump-title">Relatório de Anúncios</h2>
+                        	<h2 class="bradcaump-title">Gereciar Escolas</h2>
                             <nav class="bradcaump-content">
                               <a class="breadcrumb_item" href="index.html">Home</a>
                               <span class="brd-separetor">/</span>
-                              <span class="breadcrumb_item active">Relatório de Anúncios</span>
+                              <span class="breadcrumb_item active">Gereciar Escolas</span>
                             </nav>
                         </div>
                     </div>
@@ -34,12 +34,16 @@
                                 <div class="single-contact-form search-form space-between">
 									<select class="form-select" name="filtro_opcao">
 										<option>Selecione uma opção</option>
-										<option>Status</option>
-										<option>Tipo</option>
-										<option>Título</option>
-										<option>Valor</option>
-										<option>Criado em</option>
-										<option>Expira em</option>
+										<option>Bairro</option>
+										<option>CEP</option>
+										<option>Cidade</option>
+										<option>CPF</option>
+										<option>Data de nascimento</option>
+										<option>E-mail</option>
+										<option>Nome</option>
+										<option>Número de celular</option>
+										<option>Sobrenome</option>
+										<option>Usuário</option>
 									</select>
 									<select class="form-select" style="width: 100px" name="filtro_comparador">
 										<option>=</option>
@@ -51,8 +55,8 @@
 										<option>Não contém</option>
 									</select>									
 									<input type="text" name="pesquisa" placeholder="Pesquisar">
-									<button>Gerar</button>
-									<button>Exportar</button>
+									<button>Relatório</button>
+									<button type="submit" onclick="window.location.href='cadastro-escola.html'">Adicionar</button>
                                 </div>
                                 <div class="single-contact-form">
                                    <a href="">Adicionar outro filtro ao relatório</a>
@@ -63,61 +67,73 @@
 					<div class="col-lg-12 col-12">
 						<table>
 							<thead>
-								<td>Tipo</td>
-								<td>Título</td>
-								<td>Valor</td>
-								<td>Criado em</td>
-								<td>Expira em</td>
+								<td>Nome</td>
+								<td>Bairro</td>
+								<td>Cidade</td>
+								<td>Nível de Ensino</td>
+								<td>Modalidade de Ensino</td>
 								<td>Ações</td>
 							</thead>
 							<tbody>
 								<tr>
-									<td>Serviço</td>
-									<td>Aula de redação</td>
-									<td>50,00</td>
-									<td>04/01/2019</td>
-									<td>31/12/2019</td>
+									<td>Colégio Alpha Objetivo </td>
+									<td>Campinas</td>
+									<td>São José</td>
+									<td>Educação Básica</td>
+									<td>Presencial</td>
 									<td>
-										<a href=""><i class="icon-note icons"></i></a>
+										<a href="cadastro-escola.html"><i class="icon-note icons"></i></a>
 										<a href=""><i class="icon-trash icons"></i></a>
 										<a href=""><i class="icon-check icons published"></i></a>
 									</td>
 								</tr>
 								<tr>
-									<td>Produto</td>
-									<td>Mochila Monsterhigh linda</td>
-									<td>25,00</td>
-									<td>10/05/2019</td>
-									<td>20/02/2020</td>
+									<td>Colégio Municipal Maria Luíza de Mello </td>
+									<td>Kobrasol</td>
+									<td>São José</td>
+									<td>Educação Básica</td>
+									<td>Presencial</td>
 									<td>
-										<a href=""><i class="icon-note icons"></i></a>
-										<a href=""><i class="icon-trash icons"></i></a>
-										<a href=""><i class="icon-check icons published"></i></a>
-									</td>
-								</tr>
-								<tr>
-									<td>Produto</td>
-									<td>Apostila Positivo 2019</td>
-									<td>30,00</td>
-									<td>18/04/2019</td>
-									<td>10/09/2019</td>
-									<td>
-										<a href=""><i class="icon-note icons"></i></a>
+										<a href="cadastro-escola.html"><i class="icon-note icons"></i></a>
 										<a href=""><i class="icon-trash icons"></i></a>
 										<a href=""><i class="icon-close icons expired"></i></a>
-									</td>
+									</td>									
 								</tr>
 								<tr>
-									<td>Produto</td>
-									<td>Apostila Positivo 2017</td>
-									<td>10,50</td>
-									<td>08/02/2019</td>
-									<td>10/08/2019</td>
+									<td>Colégio Visão </td>
+									<td>Kobrasol</td>
+									<td>São José</td>
+									<td>Ensino Médio</td>
+									<td>Presencial</td>
 									<td>
-										<a href=""><i class="icon-note icons"></i></a>
+										<a href="cadastro-escola.html"><i class="icon-note icons"></i></a>
 										<a href=""><i class="icon-trash icons"></i></a>
 										<a href=""><i class="icon-check icons published"></i></a>
-									</td>
+									</td>										
+								</tr>
+								<tr>
+									<td>Centro Municipal Univrsitário de São José </td>
+									<td>Kobrasol</td>
+									<td>São José</td>
+									<td>Ensio Superior</td>
+									<td>Presencial</td>
+									<td>
+										<a href="cadastro-escola.html"><i class="icon-note icons"></i></a>
+										<a href=""><i class="icon-trash icons"></i></a>
+										<a href=""><i class="icon-close icons expired"></i></a>
+									</td>										
+								</tr>
+								<tr>
+									<td>E.E.B Professor Laércio Caldeira de Andrada</td>
+									<td>Campinas</td>
+									<td>São José</td>
+									<td>Educação Básica</td>
+									<td>Presencial</td>
+									<td>
+										<a href="cadastro-escola.html"><i class="icon-note icons"></i></a>
+										<a href=""><i class="icon-trash icons"></i></a>
+										<a href=""><i class="icon-check icons published"></i></a>
+									</td>										
 								</tr>
 							</tbody>
 						</table>
@@ -129,7 +145,7 @@
 		<div w3-include-html="inc/footer.html"></div>
 	</div>
 
-	<!-- JS Files -->
+    <!-- JS Files -->
 	<script src="js/vendor/jquery-3.2.1.min.js"></script>
 	<script src="js/vendor/modernizr-3.5.0.min.js"></script>    
 	<script src="js/popper.min.js"></script>
